@@ -1,0 +1,20 @@
+package black.com.android.internal.content;
+
+import java.io.File;
+import top.niunaijun.blackreflection.annotation.BClassName;
+import top.niunaijun.blackreflection.annotation.BField;
+import top.niunaijun.blackreflection.annotation.BParamClassName;
+import top.niunaijun.blackreflection.annotation.BStaticMethod;
+import top.niunaijun.blackreflection.annotation.BClassNameNotProcess;
+import top.niunaijun.blackreflection.annotation.BConstructorNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldSetNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldCheckNotProcess;
+import top.niunaijun.blackreflection.annotation.BMethodCheckNotProcess;
+
+@BClassNameNotProcess("com.android.internal.content.NativeLibraryHelper$Handle")
+public interface NativeLibraryHelperHandleStatic {
+    @BMethodCheckNotProcess
+    java.lang.reflect.Method _check_create(File File0);
+    Object create(File File0);
+}

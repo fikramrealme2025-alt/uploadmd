@@ -1,0 +1,25 @@
+package black.android.media;
+
+import android.os.IInterface;
+import top.niunaijun.blackreflection.annotation.BClassName;
+import top.niunaijun.blackreflection.annotation.BStaticField;
+import top.niunaijun.blackreflection.annotation.BStaticMethod;
+import top.niunaijun.blackreflection.annotation.BClassNameNotProcess;
+import top.niunaijun.blackreflection.annotation.BConstructorNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldSetNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldCheckNotProcess;
+import top.niunaijun.blackreflection.annotation.BMethodCheckNotProcess;
+
+@BClassNameNotProcess("android.media.AudioManager")
+public interface AudioManagerStatic {
+    @BFieldNotProcess
+    IInterface sService();
+    @BFieldSetNotProcess
+    void _set_sService(final Object value);
+    @BFieldCheckNotProcess
+    java.lang.reflect.Field _check_sService();
+    @BMethodCheckNotProcess
+    java.lang.reflect.Method _check_getService();
+    Void getService();
+}

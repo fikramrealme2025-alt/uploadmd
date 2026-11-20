@@ -1,0 +1,21 @@
+package black.android.os;
+
+import android.os.Handler.Callback;
+import top.niunaijun.blackreflection.annotation.BClassName;
+import top.niunaijun.blackreflection.annotation.BField;
+import top.niunaijun.blackreflection.annotation.BClassNameNotProcess;
+import top.niunaijun.blackreflection.annotation.BConstructorNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldSetNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldCheckNotProcess;
+import top.niunaijun.blackreflection.annotation.BMethodCheckNotProcess;
+
+@BClassNameNotProcess("android.os.Handler")
+public interface HandlerContext {
+    @BFieldNotProcess
+    Callback mCallback();
+    @BFieldSetNotProcess
+    void _set_mCallback(final Object value);
+    @BFieldCheckNotProcess
+    java.lang.reflect.Field _check_mCallback();
+}

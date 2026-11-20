@@ -1,0 +1,25 @@
+package black.android.app;
+
+import android.os.IInterface;
+import top.niunaijun.blackreflection.annotation.BClassName;
+import top.niunaijun.blackreflection.annotation.BStaticField;
+import top.niunaijun.blackreflection.annotation.BStaticMethod;
+import top.niunaijun.blackreflection.annotation.BClassNameNotProcess;
+import top.niunaijun.blackreflection.annotation.BConstructorNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldSetNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldCheckNotProcess;
+import top.niunaijun.blackreflection.annotation.BMethodCheckNotProcess;
+
+@BClassNameNotProcess("android.app.ActivityManagerNative")
+public interface ActivityManagerNativeStatic {
+    @BFieldNotProcess
+    Object gDefault();
+    @BFieldSetNotProcess
+    void _set_gDefault(final Object value);
+    @BFieldCheckNotProcess
+    java.lang.reflect.Field _check_gDefault();
+    @BMethodCheckNotProcess
+    java.lang.reflect.Method _check_getDefault();
+    IInterface getDefault();
+}

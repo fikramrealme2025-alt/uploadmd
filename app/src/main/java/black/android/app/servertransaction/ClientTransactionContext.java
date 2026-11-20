@@ -1,0 +1,34 @@
+package black.android.app.servertransaction;
+
+import android.os.IBinder;
+import java.util.List;
+import top.niunaijun.blackreflection.annotation.BClassName;
+import top.niunaijun.blackreflection.annotation.BField;
+import top.niunaijun.blackreflection.annotation.BClassNameNotProcess;
+import top.niunaijun.blackreflection.annotation.BConstructorNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldSetNotProcess;
+import top.niunaijun.blackreflection.annotation.BFieldCheckNotProcess;
+import top.niunaijun.blackreflection.annotation.BMethodCheckNotProcess;
+
+@BClassNameNotProcess("android.app.servertransaction.ClientTransaction")
+public interface ClientTransactionContext {
+    @BFieldNotProcess
+    List<Object> mActivityCallbacks();
+    @BFieldSetNotProcess
+    void _set_mActivityCallbacks(final Object value);
+    @BFieldCheckNotProcess
+    java.lang.reflect.Field _check_mActivityCallbacks();
+    @BFieldNotProcess
+    IBinder mActivityToken();
+    @BFieldSetNotProcess
+    void _set_mActivityToken(final Object value);
+    @BFieldCheckNotProcess
+    java.lang.reflect.Field _check_mActivityToken();
+    @BFieldNotProcess
+    Object mLifecycleStateRequest();
+    @BFieldSetNotProcess
+    void _set_mLifecycleStateRequest(final Object value);
+    @BFieldCheckNotProcess
+    java.lang.reflect.Field _check_mLifecycleStateRequest();
+}
